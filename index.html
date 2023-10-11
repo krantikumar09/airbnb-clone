@@ -4,11 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Images/airbnb-icon.svg" type="image/x-icon">
     <title>Airbnb</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/resonsive.css">
+
+    <!-- tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/2558c42d09.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
+    <!-- header -->
+    <header class="border-b border-gray-300 w-full">
+        <div class="container mx-auto py-4">
+            <nav class="flex items-center justify-between">
+
+                <div class="logo hidden md:block">
+                    <a href="index.html" class="flex items-center">
+                        <img src="Images/airbnb-icon.svg" alt="logo" class="w-8">
+                        <p class="ms-2 font-bold text-xl hidden lg:block">airbnb</p>
+                    </a>
+                </div>
+
+                <div
+                    class="header-center border border-gray-200 flex items-center justify-between px-4 py-2 rounded-full hover:shadow-md ease-in-out duration-100 cursor-pointer">
+                    <p class="text-sm font-medium text-gray-800 pe-3 ps-3 border-r border-gray-200 relative">
+                        Anywhere
+                    </p>
+                    <p class="text-sm font-medium text-gray-800 pe-3 ps-3 border-r border-gray-200 relative">Any
+                        week
+                    </p>
+                    <p class="text-sm font-normal text-gray-800 pe-3 ps-3 relative hidden sm:inline">Add guests</p>
+                    <button class="bg-red w-8 h-8 rounded-full"><i
+                            class="fa-solid fa-magnifying-glass text-white text-sm"></i></button>
+                </div>
+
+                <div class="header-right">
+                    <button
+                        class="sec-btn font-medium text-sm text-gray-700 hover:bg-gray-100 px-4 py-3 rounded-full  hidden md:inline">Airbnb
+                        your
+                        home</button>
+                    <button
+                        class="sec-btn font-medium text-sm text-gray-700 hover:bg-gray-100 px-4 py-3 rounded-full ms-1  hidden md:inline"><i
+                            class="fa-solid fa-globe text-gray-700 text-base"></i></button>
+
+                    <div class="relative inline">
+                        <button
+                            class="sec-btn font-medium text-sm text-gray-700 px-4 py-3 rounded-full border border-gray-200 ms-1 text-center hover:shadow-md ease-in-out duration-100"
+                            id="userMenuBtn" onclick="handleUserMenu()">
+                            <i class="fa-solid fa-bars text-gray-700 text-base relative hidden sm:inline"></i>
+                            <img src="Images/user.png" alt="user-icon" class="w-5 inline ms-0 mb-0 sm:ms-2 sm:mb-1" />
+                        </button>
+
+                        <div class="user-menu absolute bg-white shadow-md rounded-lg" id="userMenu">
+                            <ul class="p-4">
+                                <li class="mb-2">
+                                    <a href="#" class="text-sm font-medium text-gray-800">Sign Up</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text-sm font-normal text-gray-600">Log In</a>
+                                </li>
+                            </ul>
+                            <hr class="bg-gray-600">
+                            <ul class="p-4">
+                                <li class="mb-2">
+                                    <a href="#" class="text-sm font-normal text-gray-600">Airbnb your home</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text-sm font-normal text-gray-600">Help centre</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <!-- custom js -->
+    <script src="src/js/main.js"></script>
 </body>
 
 </html>
