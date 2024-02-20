@@ -57,3 +57,50 @@
 .user-menu.active {
   height: auto;
 }
+
+.swiper-slide i {
+  color: #717171;
+}
+
+.swiper-slide p {
+  color: #717171;
+  font-size: 15px;
+}
+
+.swiper-slide .active i,
+.swiper-slide .active p {
+  color: #222222;
+}
+
+.swiper-slide .active {
+  position: relative;
+}
+
+.swiper-slide .active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #717171;
+}
+
+.filter-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  z-index: 100;
+}
+
+.filter .fa-chevron-left {
+  left: 10px;
+}
+
+.filter .fa-chevron-right {
+  right: 10px;
+}

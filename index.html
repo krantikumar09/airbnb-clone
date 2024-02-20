@@ -23,9 +23,8 @@
     <!-- font awesome cdn -->
     <script src="https://kit.fontawesome.com/2558c42d09.js" crossorigin="anonymous"></script>
 
-    <!-- jquery cdn -->
-    <script src="https://code.jquery.com/jquery-3.7.1.js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- slick js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 
@@ -122,11 +121,149 @@
         </div>
     </header>
 
+    <!--  -->
+    <main>
+
+        <!-- filters -->
+        <section class="filter relative">
+            <div class="container mx-auto py-4">
+                <div class="flex items-center justify-between gap-5">
+
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper flex-1">
+                        <div class="swiper-wrapper text-center">
+                            <div class="swiper-slide ">
+                                <div
+                                    class="active inline-flex items-center justify-center flex-col gap-[6px] cursor-pointer relative">
+                                    <div>
+                                        <i class="fa-solid fa-house-chimney"></i>
+                                    </div>
+                                    <p class="text-sm">Rooms</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div
+                                    class="inline-flex items-center justify-center flex-col gap-[6px] cursor-pointer relative">
+                                    <div>
+                                        <i class="fa-solid fa-mountain-sun"></i>
+                                    </div>
+                                    <p class="text-sm">Amazing Views</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div
+                                    class="inline-flex items-center justify-center flex-col gap-[6px] cursor-pointer relative">
+                                    <div>
+                                        <i class="fa-solid fa-building"></i>
+                                    </div>
+                                    <p class="text-sm">Design</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div
+                                    class="inline-flex items-center justify-center flex-col gap-[6px] cursor-pointer relative">
+                                    <div>
+                                        <i class="fa-solid fa-mug-hot"></i>
+                                    </div>
+                                    <p class="text-sm">Bed & Breakfast</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div
+                                    class="inline-flex items-center justify-center flex-col gap-[6px] cursor-pointer relative">
+                                    <div>
+                                        <i class="fa-solid fa-person-skiing-nordic"></i>
+                                    </div>
+                                    <p class="text-sm">Skiing</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div
+                                    class="inline-flex items-center justify-center flex-col gap-[6px] cursor-pointer relative">
+                                    <div>
+                                        <i class="fa-solid fa-water-ladder"></i>
+                                    </div>
+                                    <p class="text-sm">Amazing Pools</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div
+                                    class="inline-flex items-center justify-center flex-col gap-[6px] cursor-pointer relative">
+                                    <div>
+                                        <i class="fa-solid fa-tree"></i>
+                                    </div>
+                                    <p class="text-sm">National Parks</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div
+                                    class="inline-flex items-center justify-center flex-col gap-[6px] cursor-pointer relative">
+                                    <div>
+                                        <i class="fa-solid fa-umbrella-beach"></i>
+                                    </div>
+                                    <p class="text-sm">Beachfront</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div
+                                    class="inline-flex items-center justify-center flex-col gap-[6px] cursor-pointer relative">
+                                    <div>
+                                        <i class="fa-solid fa-campground"></i>
+                                    </div>
+                                    <p class="text-sm">Camping</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div
+                                    class="inline-flex items-center justify-center flex-col gap-[6px] cursor-pointer relative">
+                                    <div>
+                                        <i class="fa-solid fa-umbrella-beach"></i>
+                                    </div>
+                                    <p class="text-sm">Beachfront</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-left  filter-arrow hidden sm:block"></i>
+                        <i class="fa-solid fa-chevron-right filter-arrow hidden sm:block"></i>
+
+                    </div>
+
+                    <div class="filter-box hidden sm:block">
+                        <button
+                            class="sec-btn font-medium text-sm text-gray-700 px-4 py-3 rounded-md border border-gray-200 ms-1 text-center">
+                            <i class="fa-solid fa-sliders"></i> Filter
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
 
+
+
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- slick js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- custom js -->
     <script src="src/js/main.js"></script>
+
 </body>
 
 </html>
