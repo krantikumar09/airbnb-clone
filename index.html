@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Images/airbnb-icon.svg" type="image/x-icon">
-    <title>Airbnb</title>
+    <title>Airbnb | Clone</title>
 
     <!-- custom css -->
     <link rel="stylesheet" href="src/css/style.css">
@@ -23,6 +23,10 @@
     <!-- font awesome cdn -->
     <script src="https://kit.fontawesome.com/2558c42d09.js" crossorigin="anonymous"></script>
 
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -39,15 +43,9 @@
                     </a>
                 </div>
 
-                <div
-                    class="header-center border border-gray-200 flex items-center justify-between px-4 py-2 rounded-full hover:shadow-md ease-in-out duration-100 cursor-pointer">
-                    <p class="text-sm font-medium text-gray-800 pe-3 ps-3 border-r border-gray-200 relative">
-                        Anywhere
-                    </p>
-                    <p class="text-sm font-medium text-gray-800 pe-3 ps-3 border-r border-gray-200 relative">Any
-                        week
-                    </p>
-                    <p class="text-sm font-normal text-gray-800 pe-3 ps-3 relative hidden sm:inline">Add guests</p>
+                <div class="header-center w-[300px] border border-gray-200 flex items-center justify-between px-4 py-2 rounded-full hover:shadow-md ease-in-out duration-100 cursor-pointer"
+                    id="search">
+                    <p>Search</p>
                     <button class="bg-red w-8 h-8 rounded-full"><i
                             class="fa-solid fa-magnifying-glass text-white text-sm"></i></button>
                 </div>
@@ -93,6 +91,34 @@
                     </div>
                 </div>
             </nav>
+
+            <div class="search-nav w-[90%]  mx-auto mt-4 ease-in-out duration-100" id="searchNav">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+
+                    <div class="">
+                        <p class="text-sm font-medium text-gray-800">Where</p>
+                        <input type="text" class="focus:outline-none bg-transparent" placeholder="Destination">
+                    </div>
+
+                    <div class="e">
+                        <p class="text-sm font-medium text-gray-800">Check In</p>
+                        <input type="date" class="focus:outline-none bg-transparent" placeholder="Destination">
+                    </div>
+
+                    <div class="e">
+                        <p class="text-sm font-medium text-gray-800">Check Out</p>
+                        <input type="date" class="focus:outline-none bg-transparent" placeholder="Destination">
+                    </div>
+
+                    <div class="e">
+                        <p class="text-sm font-medium text-gray-800">Guests</p>
+                        <input type="text" class="focus:outline-none bg-transparent" placeholder="Destination">
+                    </div>
+
+                    <button class="bg-red w-1/2 h-8 md:w-8  rounded-full"><i
+                            class="fa-solid fa-magnifying-glass text-white text-sm"></i></button>
+                </div>
+            </div>
         </div>
     </header>
 
